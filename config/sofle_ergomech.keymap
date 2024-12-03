@@ -17,6 +17,11 @@
 #define RAISE 3
 #define ADJUST 4
 
+&lt {
+	tapping-term-ms = <150>;
+	flavor = "hold-preferred";
+}; 
+
 // 5-way config: PRESS, RIGHT, UP, LEFT, DOWN
 / {
     // Activate ADJUST layer by pressing raise and lower
@@ -43,14 +48,16 @@
         };	
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
+    /*
+        conditional_layers {
+            compatible = "zmk,conditional-layers";
 
-        adjust_layer {
-            if-layers = <LOWER RAISE>;
-            then-layer = <ADJUST>;
+            adjust_layer {
+                if-layers = <LOWER RAISE>;
+                then-layer = <ADJUST>;
+            };
         };
-    };
+    */
 
     keymap {
         compatible = "zmk,keymap";
@@ -91,7 +98,7 @@
             bindings = <
 &kp GRAVE  &kp N1     &kp N2     &kp N3    &kp N4      &kp N5        &kp F6     &kp F7    &kp F8     &kp F9     &kp F10    &kp F11
 &kp GRAVE  &kp EXCL   &kp AT     &kp HASH  &kp DOLLAR  &kp PRCNT     &kp CARET  &kp AMPS  &kp STAR   &kp LPAR   &kp RPAR   &trans
-&trans     &kp MINUS  &kp UNDER  &kp PIPE  &kp LBRC    &kp RBRC      &kp MINUS  &kp UNDER &kp PIPE   &kp LPAR   &kp RPAR   &kp DQT
+&kp GRAVE     &kp MINUS  &kp UNDER  &kp PIPE  &kp LBRC    &kp RBRC      &kp MINUS  &kp UNDER &kp PIPE   &kp LPAR   &kp RPAR   &kp DQT
 &trans     &kp LPAR   &kp RPAR   &none     &kp LBKT    &kp RBKT      &kp PLUS   &kp EQUAL &kp LT     &kp GT     &kp BSLH   &kp EQUAL
 &trans     &trans     &trans     &trans    &trans    &trans        &trans     &trans    &trans     &trans     &trans
                                                                    &kp A      &kp B     &kp C      &kp D      &kp E
