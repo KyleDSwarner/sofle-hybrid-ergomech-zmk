@@ -51,14 +51,14 @@ layers:
   - MUTE
   - LGUI
   - LALT
-  - LALT
+  - LCTRL
   - LCTRL
   - SPACE
   - {t: RET, h: lower}
-  - Nav
+  - lower
   - RCTRL
   - RALT
-  - RGUI
+  - BSPC riiih
   - ENTER
   - RIGHT
   - UP ARROW
@@ -275,9 +275,9 @@ layers:
   - EP TOG
   - {t: BT, h: '0'}
   - {t: BT, h: '0'}
-  - RGB SAD
-  - RGB SAI
-  - RGB EFF
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
