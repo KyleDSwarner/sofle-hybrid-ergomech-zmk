@@ -58,7 +58,7 @@ layers:
   - lower
   - RCTRL
   - RALT
-  - BSPC riiih
+  - BSPC
   - ENTER
   - RIGHT
   - UP ARROW
