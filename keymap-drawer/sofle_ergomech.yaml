@@ -17,7 +17,7 @@ layers:
   - W
   - E
   - R
-  - T
+  - {t: T, h: numpad}
   - Y
   - U
   - I
@@ -65,7 +65,7 @@ layers:
   - LEFT
   - DOWN
   lower:
-  - {t: ▽, type: trans}
+  - '`'
   - F1
   - F2
   - F3
@@ -78,41 +78,41 @@ layers:
   - F10
   - F11
   - '`'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - F12
-  - {t: ▽, type: trans}
   - '!'
   - '@'
   - '#'
   - $
-  - {t: '%', type: held}
+  - '%'
   - ^
   - '&'
   - '*'
   - (
   - )
-  - '|'
   - {t: ▽, type: trans}
-  - '='
+  - {t: ▽, type: trans}
   - '-'
-  - +
+  - _
+  - '|'
   - '{'
-  - '}'
+  - {t: '}', type: held}
+  - '-'
+  - _
+  - '|'
+  - (
+  - )
+  - '"'
+  - {t: ▽, type: trans}
+  - (
+  - )
+  - ''
   - '['
   - ']'
-  - ;
-  - ':'
+  - +
+  - '='
+  - <
+  - '>'
   - \
-  - {t: ▽, type: trans}
+  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -136,46 +136,47 @@ layers:
   - F3
   - F4
   - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
+  - ''
+  - ''
+  - ''
+  - TAB
+  - ''
+  - {t: ▽, type: trans}
   - '`'
   - '1'
   - '2'
   - '3'
   - '4'
-  - '5'
-  - '6'
+  - {t: '5', type: held}
   - '7'
   - '8'
   - '9'
-  - '0'
-  - F12
+  - KP ASTERISK
+  - KP SLASH
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '!'
   - '@'
   - '#'
   - $
   - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - '|'
+  - '4'
+  - '5'
+  - '6'
+  - KP PLUS
+  - KP MINUS
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '='
   - '-'
   - +
   - '{'
   - '}'
-  - '['
-  - ']'
-  - ;
-  - ':'
+  - '1'
+  - '2'
+  - '3'
+  - .
+  - \
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -183,9 +184,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - RET
+  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -260,12 +260,12 @@ layers:
   - D
   - E
   adjust:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - Ctl+Sft+ ESC
+  - ''
+  - ''
+  - ''
+  - Alt+ F4
+  - ''
   - ''
   - ''
   - ''
@@ -273,8 +273,8 @@ layers:
   - ''
   - ''
   - EP TOG
-  - RGB HUD
-  - RGB HUI
+  - {t: BT, h: '0'}
+  - {t: BT, h: '0'}
   - RGB SAD
   - RGB SAI
   - RGB EFF
@@ -283,10 +283,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Ctl+Alt+ DEL
   - {type: held}
-  - RGB BRD
-  - RGB BRI
+  - {t: BT, h: '1'}
+  - {t: BT, h: '0'}
   - ''
   - ''
   - ''
@@ -297,6 +297,8 @@ layers:
   - ''
   - ''
   - ''
+  - {t: BT, h: '2'}
+  - OUT TOG
   - ''
   - ''
   - ''
@@ -305,10 +307,8 @@ layers:
   - ''
   - ''
   - ''
+  - BT CLR
   - ''
-  - ''
-  - ''
-  - RGB TOG
   - ''
   - ''
   - ''
