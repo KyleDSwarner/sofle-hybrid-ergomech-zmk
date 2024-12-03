@@ -78,7 +78,7 @@
 &mo ADJUST  &kp A     &kp S     &kp D      &kp F      &klt LOWER G       &kp H          &kp J      &kp K         &kp L     &kp SEMI  &kp SQT
 &kp LSHFT   &kp Z     &kp X     &kp C      &kp V      &klt RAISE B       &kp N          &kp M      &kp COMMA     &kp DOT   &kp FSLH  &kp RSHFT
 &kp C_MUTE  &kp LGUI  &kp LALT  &kp LCTRL   &kp LCTRL  &kp SPACE          &lt LOWER RET  &mo LOWER  &kp RCTRL     &kp RALT  &kp BSPC
-                                                                   riiih      &kp ENTER  &kp RIGHT  &kp UP_ARROW  &kp LEFT  &kp DOWN
+                                                                         &kp ENTER  &kp RIGHT  &kp UP_ARROW  &kp LEFT  &kp DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
