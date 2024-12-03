@@ -17,14 +17,14 @@ layers:
   - W
   - E
   - R
-  - {t: T, h: numpad}
+  - {t: T, h: Numpad}
   - Y
   - U
   - I
   - O
   - P
   - DEL
-  - adjust
+  - Adjust
   - A
   - S
   - D
@@ -41,7 +41,7 @@ layers:
   - X
   - C
   - V
-  - {t: B, h: raise}
+  - {t: B, h: Nav}
   - N
   - M
   - ','
@@ -55,7 +55,7 @@ layers:
   - LCTRL
   - SPACE
   - {t: RET, h: lower}
-  - raise
+  - Nav
   - RCTRL
   - RALT
   - RGUI
@@ -66,11 +66,11 @@ layers:
   - DOWN
   lower:
   - '`'
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
   - F6
   - F7
   - F8
@@ -129,7 +129,7 @@ layers:
   - C
   - D
   - E
-  numpad:
+  Numpad:
   - {t: ▽, type: trans}
   - F1
   - F2
@@ -184,58 +184,58 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RET
   - '0'
+  - RET
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - A
-  - B
-  - C
-  - D
-  - E
-  raise:
+  - KP SLASH
+  - KP PLUS
+  - KP ASTERISK
+  - KP MINUS
+  Nav:
   - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - INS
-  - PSCRN
-  - CMENU
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PG UP
-  - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
+  - '6'
+  - '7'
+  - '8'
+  - '9'
   - '0'
+  - PSCRN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LALT
-  - LCTRL
-  - LSHFT
   - {t: ▽, type: trans}
-  - CLCK
-  - PG DN
+  - {t: ▽, type: trans}
+  - BSPC
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - INS
+  - ''
+  - UP
+  - ''
+  - ''
+  - DEL
+  - {t: ▽, type: trans}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - ''
   - LEFT
   - DOWN
   - RIGHT
   - DEL
   - BSPC
   - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
+  - F11
+  - F12
+  - I
+  - J
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -259,7 +259,7 @@ layers:
   - C
   - D
   - E
-  adjust:
+  Adjust:
   - Ctl+Sft+ ESC
   - ''
   - ''
@@ -309,8 +309,8 @@ layers:
   - ''
   - BT CLR
   - ''
-  - ''
-  - ''
+  - Alt+Sft+ F9
+  - Alt+Sft+ F10
   - ''
   - ''
   - ''
