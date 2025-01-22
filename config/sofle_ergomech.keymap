@@ -18,8 +18,6 @@
 
 // 5-way config: PRESS, RIGHT, UP, LEFT, DOWN
 / {
-    // Activate ADJUST layer by pressing raise and lower
-
    	behaviors {
         klt: key_layer_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -49,15 +47,15 @@
             label = "Hello";
 
             bindings = <
-&kp ESC     &kp N1    &kp N2    &kp N3     &kp N4     &kp N5             &kp N6         &kp N7     &kp N8        &kp N9    &kp N0    &kp BSPC
-&kp TAB     &kp Q     &kp W     &kp E      &kp R      &kp T              &klt RAISE Y   &kp U      &kp I         &kp O     &kp P     &kp DEL
-&mo ADJUST  &kp A     &kp S     &kp D      &kp F      &klt NUMPAD G      &kp H          &kp J      &kp K         &kp L     &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z     &kp X     &kp C      &kp V      &klt RAISE B       &kp N          &kp M      &kp COMMA     &kp DOT   &kp FSLH  &kp RSHFT
-&kp C_PP    &kp LGUI  &kp LALT  &kp LCTRL  &kp LCTRL  &kp SPACE         &lt LOWER RET  &mo LOWER  &kp RCTRL     &kp RALT  &kp BSPC
-                                                                         &kp ENTER  &kp RIGHT  &kp UP_ARROW  &kp LEFT  &kp DOWN
+&kp ESC     &kp N1    &kp N2    &kp N3     &kp N4     &kp N5             &kp N6         &kp N7      &kp N8        &kp N9     &kp N0    &kp BSPC
+&kp TAB     &kp Q     &kp W     &kp E      &kp R      &kp T              &kp Y          &kp U       &kp I         &kp O      &kp P     &kp DEL
+&mo ADJUST  &kp A     &kp S     &kp D      &kp F      &klt NUMPAD G      &kp H          &kp J       &kp K         &kp L      &kp SEMI  &kp SQT
+&kp LSHFT   &kp Z     &kp X     &kp C      &kp V      &klt RAISE B       &klt RAISE N   &kp M       &kp COMMA     &kp DOT    &kp FSLH  &kp RSHFT
+&kp C_PP    &kp LGUI  &kp LALT  &kp LCTRL  &kp LCTRL  &kp SPACE          &lt LOWER RET  &mo LOWER   &mo RAISE     &kp RALT   &kp BSPC
+                                                                         &kp ENTER      &tog NUMPAD &kp PG_UP     &mo RAISE  &kp PG_DN
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         lower_layer {
@@ -72,7 +70,7 @@
                                                                    &kp A      &kp B     &kp C      &kp D      &kp E
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         numpad_layer {
@@ -87,7 +85,7 @@
                                                                      &kp RET     &kp KP_SLASH     &kp KP_PLUS      &kp KP_ASTERISK      &kp KP_MINUS
             >;
 
-            sensor-bindings = <&inc_dec_kp C_PREV C_NEXT &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
         };
 
         raise_layer {
@@ -102,7 +100,7 @@
                                                                                   &kp RET      &kp INS     &kp PG_UP     &kp PSCRN      &kp PG_DN
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         adjust_layer {
