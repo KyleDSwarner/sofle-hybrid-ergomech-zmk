@@ -107,11 +107,11 @@
 
             label = "Adjust";
             bindings = <
-&kp LC(LS(ESC))    &none         &none            &none            &kp LA(F4)       &none               &none  &none  &none  &none  &none  &none
-&ext_power EP_TOG  &bt BT_SEL 0  &bt BT_SEL 0     &none            &none            &none               &none  &none  &none  &none  &none  &kp LC(LA(DEL))
-&none              &bt BT_SEL 1  &bt BT_SEL 0     &none            &none            &none               &none  &none  &none  &none  &none  &none
-&none              &bt BT_SEL 2  &out OUT_TOG     &none            &none            &none               &none  &none  &none  &none  &none  &bt BT_CLR
-&none              &kp LA(LS(F9))     &kp LA(LS(F10))      &none      &none            &none            &none  &none  &none  &none  &none
+&kp LC(LS(ESC))    &none         &none            &none            &kp LA(F4)       &none               &ext_power EP_TOG  &none  &none  &none  &none  &none
+&none              &bt BT_SEL 0  &bt BT_SEL 2     &none            &none            &none               &none              &none  &none  &none  &none  &kp LC(LA(DEL))
+&none              &bt BT_SEL 1  &bt BT_SEL 1     &none            &none            &none               &none              &none  &none  &none  &none  &none
+&none              &bt BT_SEL 2  &out OUT_TOG     &none            &none            &none               &none              &none  &none  &none  &none  &bt BT_CLR
+&none              &kp LA(LS(F9))     &kp LA(LS(F10))      &none      &none            &none            &none              &none  &none  &none  &none
                                                                                                         &kp A  &kp B  &kp I  &kp D  &kp J
             >;
         };
