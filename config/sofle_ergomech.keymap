@@ -9,7 +9,8 @@
 #define LOWER 1
 #define NUMPAD  2
 #define RAISE 3
-#define ADJUST 4
+#define META 4
+#define ADJUST 5
 
 &lt {
 	tapping-term-ms = <150>;
@@ -51,7 +52,7 @@
 &kp TAB     &kp Q     &kp W     &kp E      &kp R      &kp T              &kp Y          &kp U       &kp I         &kp O      &kp P     &kp DEL
 &mo ADJUST  &kp A     &kp S     &kp D      &kp F      &klt NUMPAD G      &kp H          &kp J       &kp K         &kp L      &kp SEMI  &kp SQT
 &kp LSHFT   &kp Z     &kp X     &kp C      &kp V      &klt RAISE B       &klt RAISE N   &kp M       &kp COMMA     &kp DOT    &kp FSLH  &kp RSHFT
-&kp C_PP    &kp LGUI  &kp LALT  &kp LCTRL  &kp LCTRL  &kp SPACE          &lt LOWER RET  &mo LOWER   &mo RAISE     &kp RALT   &kp BSPC
+&kp C_PP    &kp LGUI  &kp LALT  &mo META   &kp LCTRL  &kp SPACE          &lt LOWER RET  &mo LOWER   &mo RAISE     &kp RALT   &kp BSPC
                                                                          &kp ENTER      &tog NUMPAD &kp PG_UP     &mo RAISE  &kp PG_DN
             >;
 
@@ -100,15 +101,28 @@
                                                                                   &kp RET      &kp INS     &kp PG_UP     &kp PSCRN      &kp PG_DN
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;  
+        };
+
+        meta_layer {
+
+            label = "Meta";
+            bindings = <
+&kp LC(LS(ESC))    &none  &none     &none            &kp LA(F4)       &none            &none  &none  &none  &none  &none  &none
+&none              &none  &none     &none            &none            &none            &none  &none  &none  &none  &none  &kp LC(LA(DEL))
+&none              &none  &none     &none            &none            &none            &none  &none  &none  &none  &none  &none
+&none              &none  &none     &none            &none            &none            &none  &none  &none  &none  &none  &none
+&none              &kp LA(LS(F9))     &kp LA(LS(F10))      &none      &trans           &none  &none  &none  &none  &none  &none
+                                                                                                        &kp A  &kp B  &kp I  &kp D  &kp J
+            >;
         };
 
         adjust_layer {
 
             label = "Adjust";
             bindings = <
-&kp LC(LS(ESC))    &none         &none            &none            &kp LA(F4)       &none               &ext_power EP_TOG  &none  &none  &none  &none  &none
-&none              &bt BT_SEL 0  &bt BT_SEL 2     &none            &none            &none               &none              &none  &none  &none  &none  &kp LC(LA(DEL))
+&kp LC(LS(ESC))    &none         &none            &none            &kp LA(F4)       &none               &studio_unlock     &none  &none  &none  &none  &none
+&none              &bt BT_SEL 0  &bt BT_SEL 2     &none            &none            &none               &ext_power EP_TOG  &none  &none  &none  &none  &kp LC(LA(DEL))
 &none              &bt BT_SEL 1  &bt BT_SEL 1     &none            &none            &none               &none              &none  &none  &none  &none  &none
 &none              &bt BT_SEL 2  &out OUT_TOG     &none            &none            &none               &none              &none  &none  &none  &none  &bt BT_CLR
 &none              &kp LA(LS(F9))     &kp LA(LS(F10))      &none      &none            &none            &none              &none  &none  &none  &none
