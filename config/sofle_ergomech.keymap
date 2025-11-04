@@ -57,7 +57,7 @@
 &mo ADJUST  &kp A     &kp S     &kp D      &kp F      &klt NUMPAD G      &kp H          &kp J       &kp K         &kp L      &kp SEMI  &kp SQT
 &kp LSHFT   &kp Z     &kp X     &kp C      &kp V      &klt RAISE B       &klt RAISE N   &kp M       &kp COMMA     &kp DOT    &kp FSLH  &kp RSHFT
 &kp C_PP    &kp LGUI  &kp LALT  &mo META   &kp LCTRL  &kp SPACE          &lt LOWER RET  &mo LOWER   &mo RAISE     &kp RALT   &kp BSPC
-                                                                         &kp ENTER      &tog NUMPAD &tog META     &kp SYSREQ  &kp PG_DN
+                                                                         &kp ENTER      &tog NUMPAD &tog META     &kp SYSREQ  &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
