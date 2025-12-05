@@ -108,7 +108,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;  
         };
 
-        meta_layer {+-*+/++b
+        meta_layer {
 
             label = "Meta";
             bindings = <
