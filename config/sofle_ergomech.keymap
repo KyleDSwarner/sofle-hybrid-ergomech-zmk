@@ -56,7 +56,7 @@
 &kp TAB     &kp Q     &kp W     &kp E      &kp R      &kp T              &kp Y          &kp U       &kp I         &kp O      &kp P     &kp DEL
 &mo ADJUST  &kp A     &kp S     &kp D      &kp F      &klt NUMPAD G      &kp H          &kp J       &kp K         &kp L      &kp SEMI  &kp SQT
 &kp LSHFT   &kp Z     &kp X     &kp C      &kp V      &klt RAISE B       &klt RAISE N   &kp M       &kp COMMA     &kp DOT    &kp FSLH  &kp RSHFT
-&kp C_PP    &kp LGUI  &kp LALT  &mo META   &kp LCTRL  &kp SPACE          &lt LOWER RET  &mo LOWER   &mo RAISE     &kp RALT   &kp BSPC
+&kp C_PP    &kp LGUI  &mo META  &kp LALT   &kp LCTRL  &kp SPACE          &kp N          &mo LOWER   &mo RAISE     &kp RALT   &kp BSPC
                                                                          &kp ENTER      &tog NUMPAD &tog META     &kp SYSREQ  &kp PRINTSCREEN
             >;
 
